@@ -2,7 +2,20 @@
 
 Projekt aplikacji webowej typu CRUD wykonany w oparciu o **React (frontend)** oraz **Node.js + Express + TypeScript (backend)**.
 
-Celem projektu było skupienie się na **dobrych praktykach inżynieryjnych**, architekturze aplikacji oraz jakości kodu, a nie wyłącznie na implementacji funkcjonalności.
+## 🎯 Cel projektu
+
+Projekt stanowi trening oraz naukę podejścia do budowy aplikacji w sposób zbliżony do środowiska produkcyjnego.
+
+Nie był to jedynie „prosty CRUD”, lecz ćwiczenie z zakresu:
+
+- architektury aplikacji (MVC)
+- odpowiedzialnego podziału warstw
+- projektowania czytelnego kodu
+- podstaw testowania - JEST (unit test, integracyjne)
+- autoryzacji i bezpieczeństwa użytkownika (JWT, httpOnly COOKIE, PASSWORD_HASH itp.)
+- zrozumienie rate-limiting
+- walidację "on the fly" (ZOD)
+- przygotowania systemu pod dalszą rozbudowę
 
 ---
 
@@ -17,7 +30,7 @@ Projekt został zrealizowany z naciskiem na:
 - walidację danych wejściowych
 - centralną obsługę błędów
 - testy jednostkowe
-- gotowość pod dalszą rozbudowę (np. autoryzacja, role, rate limiting)
+- gotowość pod dalszą rozbudowę
 
 ---
 
@@ -86,21 +99,6 @@ Zastosowano:
 ### Frontend
 - React
 - TypeScript
-
----
-
-## 🎯 Cel projektu
-
-Projekt stanowi demonstrację podejścia do budowy aplikacji w sposób zbliżony do środowiska produkcyjnego.
-
-Nie był to jedynie „prosty CRUD”, lecz ćwiczenie z zakresu:
-
-- architektury aplikacji
-- odpowiedzialnego podziału warstw
-- projektowania czytelnego kodu
-- podstaw testowania (unit test, integracyjne)
-- autoryzacji i bezpieczeństwa użytkownika (JWT, COOKIE, PASSWORD_HASH itp.)
-- przygotowania systemu pod dalszą rozbudowę
 
 ---
 
