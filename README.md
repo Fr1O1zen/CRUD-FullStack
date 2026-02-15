@@ -98,16 +98,13 @@ Nie był to jedynie „prosty CRUD”, lecz ćwiczenie z zakresu:
 - architektury aplikacji
 - odpowiedzialnego podziału warstw
 - projektowania czytelnego kodu
-- podstaw testowania
+- podstaw testowania (unit test, integracyjne)
+- autoryzacji i bezpieczeństwa użytkownika (JWT, COOKIE, PASSWORD_HASH itp.)
 - przygotowania systemu pod dalszą rozbudowę
 
 ---
 
 ## 📌 Możliwe kierunki rozwoju
-
-- autoryzacja JWT (httpOnly cookie)
 - role użytkowników
-- rate limiting
 - Docker + CI/CD
-- testy integracyjne
 
