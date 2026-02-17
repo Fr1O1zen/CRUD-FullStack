@@ -17,8 +17,6 @@ interface LoginResponse {
     username: string
   }
 }
-
-
 export default function useUserLogin(loginProps: LoginCredentials) {
    const dispatch = useDispatch()
    let navigate = useNavigate()

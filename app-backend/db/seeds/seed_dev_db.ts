@@ -1,14 +1,12 @@
-import { db } from './knex';
+import { Knex } from "knex";
 import bcrypt from "bcryptjs";
 
-export async function seedDatabase() {
-  try {
-    const existingUsers = await db("users").count("* as count");
-    const rawCount = existingUsers?.[0]?.count ?? 0;
-    const count = typeof rawCount === "string" ? parseInt(rawCount, 10) : Number(rawCount);
-    console.log("Existing users count:", count);
-    if (count === 0) {
-      await db("users").insert([
+export async function seed(knex: Knex): Promise<void> {
+    // Deletes ALL existing entries
+  await knex("users").del();
+
+    // Inserts seed entries
+    await knex("users").insert([
         {
           id: "123e4567-e89b-12d3-a456-426614174000",
           username: "admin",
@@ -34,8 +32,4 @@ export async function seedDatabase() {
           created_at: new Date(),
         },
     ]);
-  }
-  } catch (error) {
-    console.error("Error seeding database:", error);
-  }
-}
+};

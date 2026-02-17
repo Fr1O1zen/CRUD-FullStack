@@ -8,7 +8,8 @@ export const db = knex({
     port: config.db_port,
     user: config.db_user,
     password: config.db_password,
-    database: config.db_name
-  }
+    database: config.db_name,
+  },
 });
 
+export default db;
