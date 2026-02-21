@@ -8,6 +8,7 @@ import { errorMiddleware } from './middlewares/error.middleware';
 import { registerRoutes } from './routes/register.routes';
 import cookieParser from 'cookie-parser';
 import {rateLimit} from 'express-rate-limit';
+import { connectToMongoDB } from './db/mongo';
 
 
 const globalLimiter = rateLimit({
@@ -27,6 +28,7 @@ app.use(helmet());
 app.use(express.json());
 app.use(testRoutes,loginRoutes,hiveRoutes,registerRoutes);
 
+connectToMongoDB()
 
 app.use((_req, res) => {
   res.status(404).json({ message: "Route not found" });

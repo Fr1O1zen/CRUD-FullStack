@@ -1,6 +1,7 @@
+import { ObjectId } from "mongodb";
 
-interface User {
-  id: string;
+interface UserMongo {
+  _id: ObjectId;
   username: string;
   email: string;
   password_hash: string;
@@ -8,4 +9,4 @@ interface User {
   created_at: Date;
 }
 
-export type { User };
+export type { UserMongo };

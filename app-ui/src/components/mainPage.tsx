@@ -1,9 +1,6 @@
-import { useEffect } from "react";
-import { useSelector } from "react-redux";
 import Navbar from "./navBar";
 import Sidebar from "./sideBar";
 import httpApi from "../hooks/http.api";
-import useGetUserHives from "../hooks/getUserHives";
 
 export const MainPage = () => {
   let api = httpApi()

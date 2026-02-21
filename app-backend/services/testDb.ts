@@ -6,7 +6,7 @@ export async function TestDb() {
         console.log('Database connection test successful:', result.rows[0]);
         return true;
     } catch (error) {
-        console.error('Database connection test failed:', error);
+        console.log('Database connection test failed:', error);
         return false;
     }
 }
